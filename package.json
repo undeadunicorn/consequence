@@ -1,6 +1,7 @@
 {
-  "name": "consequence",
+  "name": "burst_consequence",
   "version": "0.1.0",
+  "main": "consequence.js",
   "description": "ES6 publish / subscribe library",
   "homepage": "https://github.com/hugeen/consequence",
   "author": "",
