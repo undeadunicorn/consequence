@@ -10,7 +10,7 @@ npm install burst_consequence
 
 ## Usage
 
-```
+```javascript
 import {on, off, emit} from 'burst_consequence'
 
 // Namespace events
