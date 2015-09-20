@@ -2,7 +2,6 @@ var namespaces = {}
 var listenableMap = new WeakMap()
 
 
-
 export function on (object, identifier, listener) {
     listenersFor(object, identifier).push(listener)
 }
@@ -28,6 +27,21 @@ export function emit (object, identifier, ...args) {
 }
 
 
+// forwardOn(element, 'click', scrollTo, e => [{x: e.clientX, y: e.clientY}]);
+export function forwardOn (object, identifier, execute, modifier = null) {
+
+    function listener (...args) {
+        if (modifier) {
+            args = modifier(...args)
+        }
+        execute(...args)
+    }
+    on(object, identifier, listener)
+}
+
+
+// export function forwardOff
+
 
 function getListenable (object) {
     if (typeof object === 'string') {
@@ -50,4 +64,5 @@ function listenersFor (object, identifier) {
 
     return listenable[identifier]
 }
+
 
