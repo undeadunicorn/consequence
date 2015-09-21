@@ -1,19 +1,19 @@
 {
   "name": "burst_consequence",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "consequence.js",
   "description": "ES6 publish / subscribe library",
-  "homepage": "https://github.com/hugeen/consequence",
+  "homepage": "https://github.com/undeadunicorn/consequence",
   "author": "",
   "engines": {
-    "node": ">= 0.12.0"
+    "node": ">= 4.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hugeen/consequence.git"
+    "url": "git+https://github.com/undeadunicorn/consequence.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hugeen/consequence/issues"
+    "url": "https://github.com/undeadunicorn/consequence/issues"
   }
 }
